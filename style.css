@@ -2,7 +2,20 @@
     font-family: "MultiTypePixelRegular";
     src: url(./assets/fonts/MultiTypePixel-Regular.otf);
 }
-
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
     background-color: #232125;
+}
+
+#NavBar {
+    font-family: "MultiTypePixelRegular";
+    color: white;
+    font-size: 25px;
+    margin: 0px auto 0px 0px ;
+    padding: 5px 10px;
+    background-color: #151218;
+    vertical-align: middle;
 }
