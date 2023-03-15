@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "MultiTypePixelRegular";
+    src: url(./assets/fonts/MultiTypePixel-Regular.otf);
+}
+
 body {
     background-color: #232125;
 }
