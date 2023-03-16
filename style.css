@@ -15,7 +15,6 @@ body {
     height: 100vh;
 }
 
-
 #NavBar {
     font-family: "MultiTypePixelRegular";
     color: white;
@@ -26,4 +25,27 @@ body {
     vertical-align: middle;
     height: 2.5%;
     max-height:  2.5%;
+}
+
+#PixelEditorSpace {
+    display: flex;
+    flex: 1;
+}
+
+#Tools ,
+#WorkSpace ,
+#ColorWheel {
+flex:1;
+}
+
+#Tools {
+background-color: wheat;
+}
+
+#WorkSpace {
+background-color: aquamarine;
+}
+
+#ColorWheel {
+background-color: pink;
 }
