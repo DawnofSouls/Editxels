@@ -25,6 +25,7 @@ body {
     vertical-align: middle;
     height: 2.5%;
     max-height:  2.5%;
+    min-height: 2.5%;
 }
 
 #PixelEditorSpace {
