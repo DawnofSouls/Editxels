@@ -55,6 +55,8 @@ background-color: pink;
 display: flex;
 flex-direction: column;
 align-items: center;
+border-right: solid grey 5px;
+
 }
 
 #menu {
@@ -79,7 +81,8 @@ align-items: center;
     height: 500px;
     /* background-color: white; */
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: auto; 
+
 }
 
 .tool{
