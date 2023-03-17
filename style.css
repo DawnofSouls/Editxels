@@ -70,3 +70,20 @@ align-items: center;
  margin-top: 10px;
 }
 
+#ToolBars {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 200px;
+    height: 500px;
+    /* background-color: white; */
+}
+
+.tool{
+    width: 100px;
+    max-width: 100px;
+    height: 100px;
+    max-height: 100px;
+    box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
+}
