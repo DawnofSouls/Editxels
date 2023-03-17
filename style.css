@@ -82,15 +82,20 @@ border-right: solid grey 5px;
     /* background-color: white; */
     margin-top: auto;
     margin-bottom: auto; 
-
 }
 
 .tool{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     width: 100px;
     max-width: 100px;
     height: 100px;
     max-height: 100px;
     box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
-    
+}
+
+.tool:hover {
+    background-color: gray;
 }
