@@ -102,6 +102,7 @@ border-right: solid grey 5px;
 }
 
 #Rainbow {
+    color:pink;
     animation: rainbow-colors 2s linear infinite;
     animation-delay: calc(-2s * var(--char-percent));
 }
