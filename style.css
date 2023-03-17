@@ -77,8 +77,8 @@ border-right: solid grey 5px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
-    width: 200px;
+    align-content: space-between;
+    width: 100px;
     height: 500px;
     /* background-color: white; */
     margin-top: auto;
