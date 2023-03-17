@@ -78,12 +78,16 @@ align-items: center;
     width: 200px;
     height: 500px;
     /* background-color: white; */
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .tool{
+    
     width: 100px;
     max-width: 100px;
     height: 100px;
     max-height: 100px;
     box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
+    
 }
