@@ -41,3 +41,12 @@ let colorPicker = new iro.ColorPicker('#picker', {
 });
 
 
+const MenuClick = document.getElementById("menu");
+MenuClick.addEventListener("click", ()=> {
+  let options = document.getElementById("options");
+  if (options.style.display === "none") {
+    options.style.display = "block";
+  } else {
+    options.style.display = "none";
+  }
+});
