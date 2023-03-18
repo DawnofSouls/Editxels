@@ -183,6 +183,14 @@ border-right: solid grey 5px;
     bottom: 0;
 }
 
+#ColorPreview {
+    margin: 0px auto;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border-radius: 4px;
+}
 .colorswatch{
     display: flex;
     gap:15px;
