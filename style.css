@@ -42,49 +42,26 @@ flex:1;
 }
 
 #Tools {
-/* background-color: wheat; */
-}
-
-#WorkSpace {
-background-color: aquamarine;
-flex-grow: 5;
-}
-
-#ColorWheel {
-/* background-color: pink; */
-display: flex;
-flex-direction: column;
-justify-content: center;
-/* align-self: center; */
-border-left: solid grey 5px;
-}
-
-#picker {
+    /* background-color: wheat; */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-}
-
-#Tools {
-display: flex;
-flex-direction: column;
-align-items: center;
-border-right: solid grey 5px;
+    border-right: solid grey 5px;
 }
 
 #menu {
- display: flex;
- justify-content: center;
- align-items: center;
-
- cursor: pointer;
- 
- width: 50px;
- height: 50px;
- background-color: #342d3a;
- border-radius: 10%;
- box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
- margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    cursor: pointer;
+    
+    width: 50px;
+    height: 50px;
+    background-color: #342d3a;
+    border-radius: 10%;
+    box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
+    margin-top: 10px;
 }
 
 #ToolBars {
@@ -97,6 +74,11 @@ border-right: solid grey 5px;
     /* background-color: white; */
     margin-top: auto;
     margin-bottom: auto; 
+
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
 }
 
 .tool{
@@ -133,7 +115,7 @@ border-right: solid grey 5px;
     50% { color: hsl(.5turn, 90%, 65%); }
     75% { color: hsl(.75turn, 90%, 65%); }
     100% { color: hsl(1turn, 90%, 65%); }
-  }
+}
 
 .option{
     transition: color .2s ease-in;
@@ -142,6 +124,9 @@ border-right: solid grey 5px;
     padding: 5px 1px;
     border-radius: 8px;
     align-items: center;
+
+    position: relative;
+    z-index: 10;
 }
 
 #options{
@@ -154,14 +139,7 @@ border-right: solid grey 5px;
     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
     margin-top: 10px;
     cursor: pointer;
-}
 
-#options {
-    position: relative;
-    z-index: 10;
-}
-
-.option {
     position: relative;
     z-index: 10;
 }
@@ -171,16 +149,28 @@ border-right: solid grey 5px;
     z-index: 10;
 }
 
-
 .option:hover {
     color:rgb(177, 177, 177);
 }
 
-#ToolBars {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    bottom: 0;
+#WorkSpace {
+background-color: aquamarine;
+flex-grow: 5;
+}
+
+#ColorWheel {
+/* background-color: pink; */
+display: flex;
+flex-direction: column;
+justify-content: center;
+/* align-self: center; */
+border-left: solid grey 5px;
+}
+
+#picker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #ColorPreview {
