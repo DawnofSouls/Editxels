@@ -50,6 +50,9 @@ flex-grow: 5;
 
 #ColorWheel {
 /* background-color: pink; */
+display: flex;
+justify-content: center;
+align-self: center;
 }
 
 #Tools {
