@@ -27,15 +27,7 @@ let colorPicker = new iro.ColorPicker('#picker', {
               // can also be 'saturation', 'value', 'red', 'green', 'blue', 'alpha' or 'kelvin'
               sliderType: 'value'
             }
-          },
-          { 
-            component: iro.ui.Slider,
-            options: {
-              // can also be 'saturation', 'value', 'red', 'green', 'blue', 'alpha' or 'kelvin'
-              sliderType: 'alpha'
-            }
-          },
-          
+          }
       ]
     
 });
