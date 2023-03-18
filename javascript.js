@@ -50,3 +50,11 @@ MenuClick.addEventListener("click", ()=> {
     options.style.display = "none";
   }
 });
+
+let ColorSwatches = document.getElementById("ColorSwatches");
+ColorSwatches.addEventListener("click", function(e){
+  let clickTarget = e.target;
+  if(clickTarget.dataset.color) {
+    colorPicker.color.set(clickTarget.dataset.color);
+  }
+});
