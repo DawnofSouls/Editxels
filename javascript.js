@@ -58,3 +58,12 @@ ColorSwatches.addEventListener("click", function(e){
     colorPicker.color.set(clickTarget.dataset.color);
   }
 });
+
+
+
+const ColorPreview = document.getElementById("ColorPreview");
+colorPicker.on(['color:init', 'color:change'], function(color) {
+  // log the current color as a HEX string
+  ColorPreview.style.backgroundColor = color.hexString;
+  // console.log(color.hexString);
+});
