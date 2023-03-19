@@ -21,7 +21,7 @@ body {
     font-family: "MultiTypePixelRegular";
     color: white;
     font-size: 25px;
-    margin: 0px 0px 10px 0px ;
+    /* margin: 0px 0px 10px 0px ; */
     padding: 5px 10px;
     background-color: #151218;
     vertical-align: middle;
@@ -117,6 +117,11 @@ flex:1;
     100% { color: hsl(1turn, 90%, 65%); }
 }
 
+#WorkSpace {
+    background-color: aquamarine;
+    flex-grow: 5;
+}
+
 .option{
     transition: color .2s ease-in;
     display: flex;
@@ -151,11 +156,6 @@ flex:1;
 
 .option:hover {
     color:rgb(177, 177, 177);
-}
-
-#WorkSpace {
-background-color: aquamarine;
-flex-grow: 5;
 }
 
 #ColorWheel {
