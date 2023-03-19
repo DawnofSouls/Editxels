@@ -202,13 +202,16 @@ border-left: solid grey 5px;
 #PopUp{
     background-color: #ffffff; 
     display:flex;
-    width: 25%;
-    height: 17%;
+    width: 455px;
+    height: 208px;
+    min-width: 455px;
+    min-height: 208px;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
     margin-top: 100px;
+    overflow: hidden;
 }
 
 #PopUpLeft {
@@ -235,6 +238,8 @@ border-left: solid grey 5px;
     font-family: "MultiTypePixelRegular";
     margin-right: 10px;
     margin-left: auto;
+    flex-wrap: wrap;
+    word-break: break-all
 }
 
 .XText {
