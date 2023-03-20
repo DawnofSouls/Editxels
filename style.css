@@ -200,7 +200,7 @@ border-left: solid grey 5px;
 }
 
 #PopUp{
-    background-color: #ffffff; 
+    background-color: #3C3940; 
     display:flex;
     width: 455px;
     height: 208px;
@@ -231,15 +231,18 @@ border-left: solid grey 5px;
 
 #PopUpTop {
     display: flex;
+    margin-top: 20px;
 }
 
 .NewDrawingText {
-    font-size: 50px;
+    font-size: 40px;
     font-family: "MultiTypePixelRegular";
     margin-right: 10px;
     margin-left: auto;
     flex-wrap: wrap;
-    word-break: break-all
+    word-break: break-all;
+    
+    color: white;
 }
 
 .XText {
@@ -247,12 +250,15 @@ border-left: solid grey 5px;
     font-size: 20px;
     cursor: pointer;
     margin-right: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
+
+    color: white;
 }
 
 .MiddleText , 
 .MiddleTextX{
     font-family: "MultiTypePixelRegular";
+    color: white;
 }
 
 .MiddleTextX {
@@ -264,13 +270,25 @@ border-left: solid grey 5px;
     display: flex;
     justify-content: center;
     gap:10px;
-    margin-top: 42px;
+    margin-top: 30px;
+}
+
+input {
+    background-color: #1e1a24;
+    border: none;
+    color: white;
+    font-family: "MultiTypePixelRegular";
+    border-radius: 3px;
+    resize:none;
+    padding-bottom: 3px;
+    padding-left: 3px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     width: 40px;
+    margin: 0;
 }
 
 #PopUpBottom{
@@ -282,4 +300,13 @@ button {
     width: 90px;
     height: 40px;
     font-size: 15px;
+    background-color: #1e1a24;
+    border: none;
+    cursor: pointer;
+    color: white;
+    transition: color .1s ease-in;
+}
+
+button:hover{
+    color: gray;
 }
