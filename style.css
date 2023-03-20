@@ -232,7 +232,9 @@ border-left: solid grey 5px;
 
 #PopUpTop {
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
+    align-items: center;
 }
 
 .NewDrawingText {
@@ -244,6 +246,13 @@ border-left: solid grey 5px;
     word-break: break-all;
     
     color: white;
+}
+
+.MaxText {
+    font-family: "MultiTypePixelRegular", sans-serif;
+    color: white;
+    margin-bottom: 0px;
+    font-size: 15px;
 }
 
 .XText {
@@ -271,7 +280,7 @@ border-left: solid grey 5px;
     display: flex;
     justify-content: center;
     gap:10px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 input {
