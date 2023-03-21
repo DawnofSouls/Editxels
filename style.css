@@ -131,10 +131,10 @@ flex:1;
 }
 
 #canvas {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 1152px;
+    height: 1152px;
     background-color: white;
+    margin: 0px;
 }
 
 .option{
