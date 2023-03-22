@@ -73,6 +73,8 @@ NewCreateOption.addEventListener("click" , () => {
   if (PopUpCreate.style.display === "none"){
     PopUpCreate.style.display = "block";
     options.style.display = "none";
+  }else if (PopUpCreate.style.display = "block"){
+    
   }else {
     PopUpCreate.style.display = "none";
   }
