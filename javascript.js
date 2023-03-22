@@ -31,10 +31,10 @@ let colorPicker = new iro.ColorPicker('#picker', {
       ]
     
 });
+let options = document.getElementById("options");
 
 const MenuClick = document.getElementById("menu");
 MenuClick.addEventListener("click", ()=> {
-  let options = document.getElementById("options");
   if (options.style.display === "none") {
     options.style.display = "block";
   } else {
@@ -72,10 +72,8 @@ const NewCreateOption = document.getElementById("NewCreateOption");
 NewCreateOption.addEventListener("click" , () => {
   if (PopUpCreate.style.display === "none"){
     PopUpCreate.style.display = "block";
+    options.style.display = "none";
   }else {
     PopUpCreate.style.display = "none";
   }
 })
-
-
-
