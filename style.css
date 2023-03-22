@@ -132,6 +132,7 @@ flex:1;
 
 #CanvasAbsolutePos{
     position: absolute;
+    z-index: 1;
 }
 
 #Canvas {
@@ -222,6 +223,7 @@ border-left: solid grey 5px;
 
 #PopUpAbsolPos{
     position: absolute;
+    z-index: 10;
 }
 
 #PopUp{
