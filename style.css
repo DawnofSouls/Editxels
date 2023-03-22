@@ -228,10 +228,10 @@ border-left: solid grey 5px;
     min-width: 455px;
     min-height: 208px;
     border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-top: 100px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 600px;
+    /* margin-top: 100px; */
     overflow: hidden;
     padding-left: 10px;
     box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.25);
