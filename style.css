@@ -220,6 +220,10 @@ border-left: solid grey 5px;
     box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.37);
 }
 
+#PopUpAbsolPos{
+    position: absolute;
+}
+
 #PopUp{
     background-color: #3C3940; 
     display:flex;
