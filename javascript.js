@@ -32,7 +32,6 @@ let colorPicker = new iro.ColorPicker('#picker', {
     
 });
 
-
 const MenuClick = document.getElementById("menu");
 MenuClick.addEventListener("click", ()=> {
   let options = document.getElementById("options");
@@ -51,11 +50,32 @@ ColorSwatches.addEventListener("click", function(e){
   }
 });
 
-
-
 const ColorPreview = document.getElementById("ColorPreview");
 colorPicker.on(['color:init', 'color:change'], function(color) {
   // log the current color as a HEX string
   ColorPreview.style.backgroundColor = color.hexString;
   // console.log(color.hexString);
 });
+
+const PopUpCreate = document.getElementById("PopUpAbsolPos");
+
+const CreateButton = document.getElementById("CreateButton");
+CreateButton.addEventListener("click", () => {
+  if (PopUpCreate.style.display === "block"){
+    PopUpCreate.style.display = "none";
+  }else {
+    PopUpCreate.style.display = "block";
+  }
+});
+
+const NewCreateOption = document.getElementById("NewCreateOption");
+NewCreateOption.addEventListener("click" , () => {
+  if (PopUpCreate.style.display === "none"){
+    PopUpCreate.style.display = "block";
+  }else {
+    PopUpCreate.style.display = "none";
+  }
+})
+
+
+
