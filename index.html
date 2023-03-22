@@ -49,26 +49,28 @@
             <!-- <div id="CanvasAbsolutePos">
                 <div id="Canvas"></div>
             </div> -->
-            <div id="PopUp" style="display: flex;">
-                <div id="PopUpLeft">
-                    <div id = "PopUpTop">
-                        <div id = "TopTextPopUp" class="NewDrawingText">New Drawing</div>
-                        <div id = "TopTextPopUp" class="MaxText">-Max 64 pixels-</div>
-
+            <div id="PopUpAbsolPos">
+                <div id="PopUp" style="display: flex;">
+                    <div id="PopUpLeft">
+                        <div id = "PopUpTop">
+                            <div id = "TopTextPopUp" class="NewDrawingText">New Drawing</div>
+                            <div id = "TopTextPopUp" class="MaxText">-Max 64 pixels-</div>
+    
+                        </div>
+                        <div id = "PopUpMiddle">
+                            <div class="MiddleText">Width</div>
+                            <input type="number" min="1" max="64"/>
+                            <div class="MiddleTextX">X</div>
+                            <div class="MiddleText">height</div>
+                            <input type="number" min="1" max="64">
+                        </div>
+                        <div id = "PopUpBottom">
+                            <button>Create</button>
+                        </div>
                     </div>
-                    <div id = "PopUpMiddle">
-                        <div class="MiddleText">Width</div>
-                        <input type="number" min="1" max="64"/>
-                        <div class="MiddleTextX">X</div>
-                        <div class="MiddleText">height</div>
-                        <input type="number" min="1" max="64">
+                    <div id="PopUpRight">
+                        <div class = "XText">X</div>
                     </div>
-                    <div id = "PopUpBottom">
-                        <button>Create</button>
-                    </div>
-                </div>
-                <div id="PopUpRight">
-                    <div class = "XText">X</div>
                 </div>
             </div>
         </div>
