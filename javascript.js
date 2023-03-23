@@ -59,14 +59,31 @@ colorPicker.on(['color:init', 'color:change'], function(color) {
 
 const PopUpCreate = document.getElementById("PopUpAbsolPos");
 
+function WxHInput() {
+  let WidthInput = document.getElementById("WidthPixels").value;
+  let HeightInput = document.getElementById("HeightPixels").value;
+
+  if (WidthInput > 64) {
+    WidthInput = 64;
+  } else if (HeightInput > 64) {
+    HeightInput = 64;
+  } else if ( (WidthInput > 65) && (HeightInput > 65)) {
+    WidthInput = 64;
+    HeightInput = 64;
+  } else {
+    // Inputs are smaller than 64
+  };
+
+console.log(WidthInput," x ", HeightInput);
+
+}
+
 const CreateButton = document.getElementById("CreateButton");
 CreateButton.addEventListener("click", () => {
   if (PopUpCreate.style.display === "block"){
     PopUpCreate.style.display = "none";
     options.style.display = "none";
-    let WidthInput = document.getElementById("WidthPixels").value;
-    let HeightInput = document.getElementById("HeightPixels").value;
-    console.log(WidthInput," x ", HeightInput);
+    WxHInput();
   }else {
     PopUpCreate.style.display = "block";
   }
