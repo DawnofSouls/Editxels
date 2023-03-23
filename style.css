@@ -140,6 +140,9 @@ flex:1;
     height: 1152px;
     background-color: white;
     margin: 0px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .option{
