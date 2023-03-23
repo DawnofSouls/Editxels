@@ -73,6 +73,8 @@ NewCreateOption.addEventListener("click" , () => {
   if (PopUpCreate.style.display === "none"){
     PopUpCreate.style.display = "block";
     options.style.display = "none";
+    let WidthInput = document.getElementById("WidthPixels");
+    let HeightInput = document.getElementById("HeightPixels");
   }else if (PopUpCreate.style.display = "block"){
     
   }else {
