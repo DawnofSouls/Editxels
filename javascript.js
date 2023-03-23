@@ -63,6 +63,10 @@ const CreateButton = document.getElementById("CreateButton");
 CreateButton.addEventListener("click", () => {
   if (PopUpCreate.style.display === "block"){
     PopUpCreate.style.display = "none";
+    options.style.display = "none";
+    let WidthInput = document.getElementById("WidthPixels").value;
+    let HeightInput = document.getElementById("HeightPixels").value;
+    console.log(WidthInput," x ", HeightInput);
   }else {
     PopUpCreate.style.display = "block";
   }
@@ -72,9 +76,6 @@ const NewCreateOption = document.getElementById("NewCreateOption");
 NewCreateOption.addEventListener("click" , () => {
   if (PopUpCreate.style.display === "none"){
     PopUpCreate.style.display = "block";
-    options.style.display = "none";
-    let WidthInput = document.getElementById("WidthPixels");
-    let HeightInput = document.getElementById("HeightPixels");
   }else if (PopUpCreate.style.display = "block"){
     
   }else {
