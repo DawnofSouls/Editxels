@@ -59,31 +59,26 @@ colorPicker.on(['color:init', 'color:change'], function(color) {
 
 const PopUpCreate = document.getElementById("PopUpAbsolPos");
 
+document.getElementById("WidthPixels").addEventListener("change", function () {
+  let v = parseInt(this.value);
+  if (v < 2) this.value = 2;
+  if (v > 64) this.value = 64;
+});
+
+document.getElementById("HeightPixels").addEventListener("change", function () {
+  let v = parseInt(this.value);
+  if (v < 2) this.value = 2;
+  if (v > 64) this.value = 64;
+});
+
+
 function WxHInput() {
   let WidthInput = document.getElementById("WidthPixels").value;
   let HeightInput = document.getElementById("HeightPixels").value;
 
-  if (WidthInput > 65 && HeightInput > 65) {
-    WidthInput = 64;
-    HeightInput = 64;
-  } else if (WidthInput < 2 && HeightInput < 2) {
-    WidthInput = 2;
-    HeightInput = 2;
-  } else if (WidthInput < 2) {
-    WidthInput = 2;
-  } else if (HeightInput < 2) {
-    HeightInput = 2;
-  } else if (HeightInput > 64) {
-    HeightInput = 64;
-  } else if (WidthInput > 64) {
-    WidthInput = 64;
-  } else {
-    // Inputs are smaller than 64
-  }
-
-  console.log(WidthInput);
-  console.log(HeightInput);
-  console.log(WidthInput, "x", HeightInput);
+  console.log(+WidthInput);
+  console.log(+HeightInput);
+  console.log(+WidthInput, "x", +HeightInput);
 }
 
 const CreateButton = document.getElementById("CreateButton");
