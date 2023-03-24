@@ -63,27 +63,29 @@ function WxHInput() {
   let WidthInput = document.getElementById("WidthPixels").value;
   let HeightInput = document.getElementById("HeightPixels").value;
 
-  if (WidthInput > 64) {
+  if ((WidthInput > 65) && (HeightInput > 65)) {
     WidthInput = 64;
+    HeightInput = 64;
   } else if (HeightInput > 64) {
     HeightInput = 64;
-  } else if ( (WidthInput > 65) && (HeightInput > 65)) {
+  } else if (WidthInput > 64) {
     WidthInput = 64;
-    HeightInput = 64;
   } else {
     // Inputs are smaller than 64
   };
 
-console.log(WidthInput," x ", HeightInput);
+console.log(WidthInput);
+console.log(HeightInput);
+console.log(WidthInput,"x", HeightInput);
 
 }
 
 const CreateButton = document.getElementById("CreateButton");
 CreateButton.addEventListener("click", () => {
   if (PopUpCreate.style.display === "block"){
+    WxHInput();
     PopUpCreate.style.display = "none";
     options.style.display = "none";
-    WxHInput();
   }else {
     PopUpCreate.style.display = "block";
   }
