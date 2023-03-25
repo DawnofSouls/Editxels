@@ -102,3 +102,11 @@ NewCreateOption.addEventListener("click" , () => {
     PopUpCreate.style.display = "none";
   }
 })
+
+const CreateCanvas = () => {
+  const CreateWidth = document.createElement("div");
+  CreateWidth.id = "PixelBoxes";
+
+  let PixelWidthContainer = document.getElementById("PixelContainer");
+  PixelWidthContainer.appendChild(CreateWidth);
+}
