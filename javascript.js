@@ -94,7 +94,10 @@ function WxHInput() {
     PixelWidthContainer.appendChild(CreateWidth);
   };
 
-  // for (let i = 0)
+  for (let j = 0; j < HeightInput-1; j++){
+    let container = CreateWidthContainer.cloneNode(true);
+    CanvasContainer.appendChild(container);
+  };
 }
 
 const CreateButton = document.getElementById("CreateButton");
