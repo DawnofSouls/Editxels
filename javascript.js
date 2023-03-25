@@ -79,13 +79,22 @@ function WxHInput() {
   console.log(+HeightInput);
   console.log(+WidthInput, "x", +HeightInput);
 
+  const CreateWidthContainer = document.createElement("div");
+  CreateWidthContainer.id = "PixelContainer";
+
+  let CanvasContainer = document.getElementById("Canvas");
+  CanvasContainer.appendChild(CreateWidthContainer);
+
+
   for (let i = 0; i < WidthInput; i++) {
     const CreateWidth = document.createElement("div");
     CreateWidth.id = "PixelBoxes";
-
+    
     let PixelWidthContainer = document.getElementById("PixelContainer");
     PixelWidthContainer.appendChild(CreateWidth);
-  }
+  };
+
+  // for (let i = 0)
 }
 
 const CreateButton = document.getElementById("CreateButton");
