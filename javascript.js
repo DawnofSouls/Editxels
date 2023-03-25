@@ -71,7 +71,6 @@ document.getElementById("HeightPixels").addEventListener("change", function () {
   if (v > 64) this.value = 64;
 });
 
-
 function WxHInput() {
   let WidthInput = document.getElementById("WidthPixels").value;
   let HeightInput = document.getElementById("HeightPixels").value;
@@ -79,6 +78,14 @@ function WxHInput() {
   console.log(+WidthInput);
   console.log(+HeightInput);
   console.log(+WidthInput, "x", +HeightInput);
+
+  for (let i = 0; i < WidthInput; i++) {
+    const CreateWidth = document.createElement("div");
+    CreateWidth.id = "PixelBoxes";
+
+    let PixelWidthContainer = document.getElementById("PixelContainer");
+    PixelWidthContainer.appendChild(CreateWidth);
+  }
 }
 
 const CreateButton = document.getElementById("CreateButton");
@@ -102,11 +109,3 @@ NewCreateOption.addEventListener("click" , () => {
     PopUpCreate.style.display = "none";
   }
 })
-
-const CreateCanvas = () => {
-  const CreateWidth = document.createElement("div");
-  CreateWidth.id = "PixelBoxes";
-
-  let PixelWidthContainer = document.getElementById("PixelContainer");
-  PixelWidthContainer.appendChild(CreateWidth);
-}
