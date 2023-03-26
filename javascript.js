@@ -42,6 +42,14 @@ MenuClick.addEventListener("click", ()=> {
   }
 });
 
+const XClick = document.getElementById("XText");
+XClick.addEventListener("click", () => {
+  PopUpCreate.style.display = "none";
+  if (options.style.display === "block") {
+    options.style.display = "none";
+  }
+});
+
 let ColorSwatches = document.getElementById("ColorSwatches");
 ColorSwatches.addEventListener("click", function(e){
   let clickTarget = e.target;
