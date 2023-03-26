@@ -99,8 +99,6 @@ function WxHInput() {
   const CreateWidthContainer = document.createElement("div");
   CreateWidthContainer.id = "PixelContainer";
 
-  const AllWidthContainer = document.getElementById("PixelContainer");
-
   CanvasContainer.appendChild(CreateWidthContainer);
 
   /*if (WidthInput === HeightInput){
