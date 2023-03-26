@@ -80,6 +80,7 @@ document.getElementById("HeightPixels").addEventListener("change", function () {
 });
 
 function WxHInput() {
+  
   let WidthInput = document.getElementById("WidthPixels").value;
   let HeightInput = document.getElementById("HeightPixels").value;
 
@@ -98,8 +99,20 @@ function WxHInput() {
   const CreateWidthContainer = document.createElement("div");
   CreateWidthContainer.id = "PixelContainer";
 
+  const AllWidthContainer = document.getElementById("PixelContainer");
+
   CanvasContainer.appendChild(CreateWidthContainer);
 
+  /*if (WidthInput === HeightInput){
+    document.getElementById("PixelContainer").style.width = "100%";
+    document.getElementById("PixelContainer").style.height = "100%";
+  }else if (WidthInput > HeightInput){
+    document.getElementById("PixelContainer").style.width = "100%";
+    document.getElementById("PixelContainer").style.height = "0%";
+  } else {
+    document.getElementById("PixelContainer").style.width = "0%";
+    document.getElementById("PixelContainer").style.height = "100%";
+  };*/
 
   for (let i = 0; i < WidthInput; i++) {
     const CreateWidth = document.createElement("div");
