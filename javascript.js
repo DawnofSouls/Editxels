@@ -78,11 +78,18 @@ function WxHInput() {
   console.log(+WidthInput);
   console.log(+HeightInput);
   console.log(+WidthInput, "x", +HeightInput);
+  
+  let CanvasContainer = document.getElementById("Canvas");
+
+  if (CanvasContainer.hasChildNodes()){
+    while(CanvasContainer.firstChild){
+      CanvasContainer.removeChild(CanvasContainer.lastChild);
+    }};
+  
 
   const CreateWidthContainer = document.createElement("div");
   CreateWidthContainer.id = "PixelContainer";
 
-  let CanvasContainer = document.getElementById("Canvas");
   CanvasContainer.appendChild(CreateWidthContainer);
 
 
