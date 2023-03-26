@@ -297,7 +297,7 @@ border-left: solid grey 5px;
     font-size: 15px;
 }
 
-.XText {
+#XText {
     font-family: "MultiTypePixelRegular", sans-serif;
     font-size: 20px;
     cursor: pointer;
@@ -308,7 +308,7 @@ border-left: solid grey 5px;
     color: white;
 }
 
-.XText:hover{
+#XText:hover{
     color:gray;
 }
 
