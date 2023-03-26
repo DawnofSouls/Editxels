@@ -395,4 +395,6 @@ button:hover{
     width: auto;
     box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
 
+    cursor: crosshair;
+
 }
