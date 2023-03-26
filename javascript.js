@@ -101,16 +101,14 @@ function WxHInput() {
 
   CanvasContainer.appendChild(CreateWidthContainer);
 
-  /*if (WidthInput === HeightInput){
+  if (+WidthInput === +HeightInput){
     document.getElementById("PixelContainer").style.width = "100%";
     document.getElementById("PixelContainer").style.height = "100%";
-  }else if (WidthInput > HeightInput){
+  }else if (+WidthInput > +HeightInput){
     document.getElementById("PixelContainer").style.width = "100%";
-    document.getElementById("PixelContainer").style.height = "0%";
   } else {
-    document.getElementById("PixelContainer").style.width = "0%";
     document.getElementById("PixelContainer").style.height = "100%";
-  };*/
+  };
 
   for (let i = 0; i < WidthInput; i++) {
     const CreateWidth = document.createElement("div");
