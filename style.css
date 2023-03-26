@@ -138,12 +138,21 @@ flex:1;
 #Canvas {
     width: 1152px;
     height: 1152px;
+    max-width: 1152px;
+    max-height: 1152px;
+
+    min-width: 0;
+    min-height: 0;
+    
+    
     background-color: white;
     margin: 0px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .option{
@@ -362,14 +371,26 @@ button:hover{
 #PixelContainer{
     box-sizing: border-box;
     display: flex;
-    width:100%;
     border: 1px solid black;
+    /* width: 100%; */
+
+    /* Unhiding width above will cause the with to stretch to the edge,
+    making pixels squares rectanges instead of 1/1 aspect ratio squares */
+
+    /* New idea: Maybe create an if statement that if the width is greater than height, disable height:100%
+    and if height is greater, disable width:100%? */
+
+    height: 100%;
+    min-height: 0%;
+    min-width: 0%;
 }
 
 #PixelBoxes {
     aspect-ratio: 1/1 ;
     flex: 1;
     background-color: #D92546;
+
+    
     height:auto;
     width: auto;
     box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255);
