@@ -145,3 +145,9 @@ NewCreateOption.addEventListener("click" , () => {
     PopUpCreate.style.display = "none";
   }
 })
+
+document.querySelectorAll(".PixelBoxes").forEach( element => {
+  element.addEventListener("click", () => {
+    console.log(colorPicker.color.hexString);
+  })
+});
