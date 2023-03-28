@@ -112,7 +112,7 @@ function WxHInput() {
 
   for (let i = 0; i < WidthInput; i++) {
     const CreateWidth = document.createElement("div");
-    CreateWidth.id = "PixelBoxes";
+    CreateWidth.classList.add("PixelBoxes");
     
     let PixelWidthContainer = document.getElementById("PixelContainer");
     PixelWidthContainer.appendChild(CreateWidth);
