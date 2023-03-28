@@ -151,3 +151,13 @@ document.querySelectorAll(".PixelBoxes").forEach( element => {
     console.log(colorPicker.color.hexString);
   })
 });
+
+document.addEventListener("DOMContentLoaded" , () => {
+  console.log("colorPicker.color.hexString")
+});
+
+document.querySelectorAll("i").forEach( element => {
+  element.addEventListener("click", () => {
+    console.log(colorPicker.color.hexString);
+  })
+});
