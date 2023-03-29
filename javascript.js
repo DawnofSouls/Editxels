@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded" , () => {
   console.log("colorPicker.color.hexString")
 });
 
-document.querySelectorAll("element").forEach( element => {
+document.querySelectorAll("i").forEach( element => {
   element.addEventListener("click", () => {
     console.log(colorPicker.color.hexString);
   })
