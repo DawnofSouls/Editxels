@@ -122,6 +122,13 @@ function WxHInput() {
     let container = CreateWidthContainer.cloneNode(true);
     CanvasContainer.appendChild(container);
   };
+  
+  document.querySelectorAll(".PixelBoxes").forEach( element => {
+    element.addEventListener("click", () => {
+      console.log(colorPicker.color.hexString);
+    })
+  });
+  
 }
 
 const CreateButton = document.getElementById("CreateButton");
@@ -153,7 +160,7 @@ document.querySelectorAll(".PixelBoxes").forEach( element => {
 });
 
 document.addEventListener("DOMContentLoaded" , () => {
-  console.log("colorPicker.color.hexString")
+  console.log(colorPicker.color.hexString)
 });
 
 document.querySelectorAll("i").forEach( element => {
