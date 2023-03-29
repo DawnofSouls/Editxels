@@ -126,6 +126,12 @@ function WxHInput() {
   document.querySelectorAll(".PixelBoxes").forEach( element => {
     element.addEventListener("click", () => {
       console.log(colorPicker.color.hexString);
+
+      document.querySelectorAll(".PixelBoxes").forEach( element => {
+        element.style.backgroundColor = colorPicker.color.hexString;
+
+      })
+
     })
   });
   
