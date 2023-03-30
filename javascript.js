@@ -127,6 +127,15 @@ function WxHInput() {
     element.addEventListener("click", () => {
       console.log(colorPicker.color.hexString);
       element.style.backgroundColor = colorPicker.color.hexString;
+
+      // delete this below if doesnt work
+      document.querySelectorAll(".PixelBoxes").forEach( element => {
+          element.addEventListener("mouseover", () => {
+            element.style.backgroundColor = colorPicker.color.hexString;
+
+          })
+      })
+      //
     })
   });
   
