@@ -396,7 +396,8 @@ button:hover{
 .PixelBoxes {
     aspect-ratio: 1/1 ;
     flex: 1;
-    background-color: #D92546;
+    /* background-color: #D92546; */
+    background-color: #ffffff;
 
     
     height:auto;
