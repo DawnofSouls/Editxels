@@ -123,22 +123,15 @@ function WxHInput() {
     CanvasContainer.appendChild(container);
   };
   
-  document.querySelectorAll(".PixelBoxes").forEach( element => {
-    element.addEventListener("click", () => {
-      console.log(colorPicker.color.hexString);
-      element.style.backgroundColor = colorPicker.color.hexString;
-
-      // delete this below if doesnt work
-      document.querySelectorAll(".PixelBoxes").forEach( element => {
-          element.addEventListener("mouseover", () => {
-            element.style.backgroundColor = colorPicker.color.hexString;
-
-          })
-      })
-      //
-    })
+  document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.addEventListener("mouseover", () => {
+      if (mouseDown) {
+        console.log(colorPicker.color.hexString);
+        element.style.backgroundColor = colorPicker.color.hexString;
+      }
+    });
   });
-  
+
 }
 
 const CreateButton = document.getElementById("CreateButton");
