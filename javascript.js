@@ -122,6 +122,14 @@ function WxHInput() {
     let container = CreateWidthContainer.cloneNode(true);
     CanvasContainer.appendChild(container);
   };
+
+  let mouseDown = 0;
+  document.body.onmousedown = function () {
+    ++mouseDown;
+  };
+  document.body.onmouseup = function () {
+    --mouseDown;
+  };
   
   document.querySelectorAll(".PixelBoxes").forEach((element) => {
     element.addEventListener("mouseover", () => {
