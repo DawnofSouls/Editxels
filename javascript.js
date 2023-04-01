@@ -196,6 +196,9 @@ Pencil.onclick = () => {
   };
   
   document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.addEventListener("click", () => {
+      element.style.backgroundColor = colorPicker.color.hexString;
+    });
     element.addEventListener("mouseover", () => {
       if (mouseDown) {
         console.log(colorPicker.color.hexString);
@@ -220,6 +223,9 @@ Eraser.onclick = () => {
   };
   
   document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.addEventListener("click", () => {
+      element.style.backgroundColor = "white";
+    });
     element.addEventListener("mouseover", () => {
       if (mouseDown) {
         console.log(colorPicker.color.hexString);
@@ -244,6 +250,10 @@ Rainbow.onclick = () => {
   };
   
   document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.addEventListener("click", () => {
+      const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+      element.style.background = "#" + randomColor;
+    });
     element.addEventListener("mouseover", () => {
       if (mouseDown) {
         const randomColor = Math.floor(Math.random() * 16777215).toString(16);
