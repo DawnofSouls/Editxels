@@ -84,9 +84,9 @@ function WxHInput() {
   let WidthInput = document.getElementById("WidthPixels").value;
   let HeightInput = document.getElementById("HeightPixels").value;
 
-  console.log(+WidthInput);
-  console.log(+HeightInput);
-  console.log(+WidthInput, "x", +HeightInput);
+  // console.log(+WidthInput);
+  // console.log(+HeightInput);
+  // console.log(+WidthInput, "x", +HeightInput);
   
   let CanvasContainer = document.getElementById("Canvas");
 
@@ -171,17 +171,17 @@ NewCreateOption.addEventListener("click" , () => {
 
 document.querySelectorAll(".PixelBoxes").forEach( element => {
   element.addEventListener("click", () => {
-    console.log(colorPicker.color.hexString);
+    // console.log(colorPicker.color.hexString);
   })
 });
 
 document.addEventListener("DOMContentLoaded" , () => {
-  console.log(colorPicker.color.hexString)
+  // console.log(colorPicker.color.hexString)
 });
 
 document.querySelectorAll("i").forEach( element => {
   element.addEventListener("click", () => {
-    console.log(colorPicker.color.hexString);
+    // console.log(colorPicker.color.hexString);
   })
 });
 
@@ -206,7 +206,7 @@ Pencil.onclick = () => {
     });
     element.addEventListener("mouseover", () => {
       if (mouseDown) {
-        console.log(colorPicker.color.hexString);
+        // console.log(colorPicker.color.hexString);
         element.style.backgroundColor = colorPicker.color.hexString;
       }
     });
@@ -233,7 +233,7 @@ Eraser.onclick = () => {
     });
     element.addEventListener("mouseover", () => {
       if (mouseDown) {
-        console.log(colorPicker.color.hexString);
+        // console.log(colorPicker.color.hexString);
         element.style.backgroundColor = "white";
       }
     });
@@ -283,7 +283,7 @@ let GridToggle = document.getElementById("Grid");
 let Toggle = 0;
 GridToggle.onclick = () => {
   Toggle++;
-  console.log(Toggle);
+  // console.log(Toggle);
 
   if (Toggle === 1) {
     document.querySelectorAll(".PixelBoxes").forEach((element) => {
