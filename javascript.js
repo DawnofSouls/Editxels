@@ -309,3 +309,17 @@ GridToggle.onclick = () => {
     });
   }
 }
+
+let SaveImageClick = document.getElementById("dl-png");
+SaveImageClick.onclick = function () {
+  const screenshotTarget = document.getElementById("Canvas");
+
+  html2canvas(screenshotTarget).then((canvas) => {
+    const base64image = canvas.toDataURL("image/png");
+    var anchor = document.createElement("a");
+    anchor.setAttribute("href", base64image);
+    anchor.setAttribute("download", "my-image.png");
+    anchor.click();
+    anchor.remove();
+  });
+};
