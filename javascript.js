@@ -314,6 +314,10 @@ let SaveImageClick = document.getElementById("dl-png");
 SaveImageClick.onclick = function () {
   const screenshotTarget = document.getElementById("Canvas");
 
+  document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.style.boxShadow = "";
+  });
+  
   html2canvas(screenshotTarget).then((canvas) => {
     const base64image = canvas.toDataURL("image/png");
     var anchor = document.createElement("a");
