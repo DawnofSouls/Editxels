@@ -148,6 +148,11 @@ CreateButton.addEventListener("click", () => {
     WxHInput();
     PopUpCreate.style.display = "none";
     options.style.display = "none";
+    
+    document.getElementById("Pencil").style.backgroundColor = "";
+    document.getElementById("Eraser").style.backgroundColor = "";
+    document.getElementById("Rainbow").style.backgroundColor = "";
+    document.getElementById("Clear").style.backgroundColor = "";
   }else {
     PopUpCreate.style.display = "block";
   }
