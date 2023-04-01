@@ -148,7 +148,7 @@ CreateButton.addEventListener("click", () => {
     WxHInput();
     PopUpCreate.style.display = "none";
     options.style.display = "none";
-    
+
     document.getElementById("Pencil").style.backgroundColor = "";
     document.getElementById("Eraser").style.backgroundColor = "";
     document.getElementById("Rainbow").style.backgroundColor = "";
@@ -279,3 +279,33 @@ Clear.onclick = () => {
   });
 };
 
+let GridToggle = document.getElementById("Grid");
+let Toggle = 0;
+GridToggle.onclick = () => {
+  Toggle++;
+  console.log(Toggle);
+
+  if (Toggle === 1) {
+    document.querySelectorAll(".PixelBoxes").forEach((element) => {
+      element.style.boxShadow = "inset 0px 0px 0px 1px white";
+    });
+
+    GridToggle.style.backgroundColor = "white";
+    GridToggle.style.color = "black";
+  } else if (Toggle === 2) {
+    document.querySelectorAll(".PixelBoxes").forEach((element) => {
+      element.style.boxShadow = "inset 0px 0px 0px 1px black";
+    });
+
+    GridToggle.style.backgroundColor = "black";
+    GridToggle.style.color = "white";
+  } else if (Toggle > 2) {
+    Toggle = 0;
+    GridToggle.style.backgroundColor = "";
+    GridToggle.style.color = "";
+
+    document.querySelectorAll(".PixelBoxes").forEach((element) => {
+      element.style.boxShadow = "";
+    });
+  }
+}
