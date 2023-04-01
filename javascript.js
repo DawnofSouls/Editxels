@@ -131,7 +131,7 @@ function WxHInput() {
     --mouseDown;
   };
   
-  document.querySelectorAll(".PixelBoxes").forEach((element) => {
+  /*document.querySelectorAll(".PixelBoxes").forEach((element) => {
     element.addEventListener("mouseover", () => {
       if (mouseDown) {
         console.log(colorPicker.color.hexString);
@@ -139,7 +139,7 @@ function WxHInput() {
       }
     });
   });
-
+  */
 }
 
 const CreateButton = document.getElementById("CreateButton");
@@ -179,3 +179,88 @@ document.querySelectorAll("i").forEach( element => {
     console.log(colorPicker.color.hexString);
   })
 });
+
+
+let Pencil = document.getElementById("Pencil");
+let Eraser = document.getElementById("Eraser");
+let Rainbow = document.getElementById("Rainbow");
+let Clear = document.getElementById("Clear");
+
+Pencil.onclick = () => {
+  let mouseDown = 0;
+  document.body.onmousedown = function () {
+    ++mouseDown;
+  };
+  document.body.onmouseup = function () {
+    --mouseDown;
+  };
+  
+  document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.addEventListener("mouseover", () => {
+      if (mouseDown) {
+        console.log(colorPicker.color.hexString);
+        element.style.backgroundColor = colorPicker.color.hexString;
+      }
+    });
+  });
+  
+  Pencil.style.background = "gray";
+  Eraser.style.background = "";
+  Rainbow.style.background = "";
+  Clear.style.background = "";
+}
+
+Eraser.onclick = () => {
+  let mouseDown = 0;
+  document.body.onmousedown = function () {
+    ++mouseDown;
+  };
+  document.body.onmouseup = function () {
+    --mouseDown;
+  };
+  
+  document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.addEventListener("mouseover", () => {
+      if (mouseDown) {
+        console.log(colorPicker.color.hexString);
+        element.style.backgroundColor = "white";
+      }
+    });
+  });
+  
+  Pencil.style.background = "";
+  Eraser.style.background = "gray";
+  Rainbow.style.background = "";
+  Clear.style.background = "";
+}
+
+Rainbow.onclick = () => {
+  let mouseDown = 0;
+  document.body.onmousedown = function () {
+    ++mouseDown;
+  };
+  document.body.onmouseup = function () {
+    --mouseDown;
+  };
+  
+  document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.addEventListener("mouseover", () => {
+      if (mouseDown) {
+        const randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        element.style.background = "#" + randomColor;
+      }
+    });
+  });
+  
+  Pencil.style.background = "none";
+  Eraser.style.background = "none";
+  Rainbow.style.background = "gray";
+  Clear.style.background = "none";
+}
+
+Clear.onclick = () => {
+  document.querySelectorAll(".PixelBoxes").forEach((element) => {
+    element.style.backgroundColor = "white";
+  });
+};
+
