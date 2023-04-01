@@ -402,7 +402,7 @@ button:hover{
     
     height:auto;
     width: auto;
-    /* box-shadow:inset 0px 0px 0px 1px rgb(255, 255, 255); */
+    box-shadow:; 
 
     cursor: crosshair;
     user-select: none;
@@ -412,4 +412,9 @@ button:hover{
 
 #Clear:hover {
     background-color: #D92546;
+}
+
+#Grid {
+    background-color:;
+    color:#747474;
 }
