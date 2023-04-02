@@ -1,5 +1,7 @@
 ![Logo](https://user-images.githubusercontent.com/28073955/229327939-118037c7-ce51-4081-ae6a-78dfdadee363.png)
-<img src="https://user-images.githubusercontent.com/28073955/229327939-118037c7-ce51-4081-ae6a-78dfdadee363.png" align="center" width="500">
+<p align="center">
+    <img src="https://user-images.githubusercontent.com/28073955/229327939-118037c7-ce51-4081-ae6a-78dfdadee363.png" width="500">
+</p>
 
 # Editxels
 
