@@ -6,6 +6,15 @@
 
 A project based on Etch a Sketch project from The Odin Project.
 
+
+## Assets
+
+Font and SVG Icons belongs to their retrospective owner
+
+ - [Boxicons](https://boxicons.com/)
+ - [Multitype-Pixel Regular Font](https://www.fonts.com/font/cyanotype/multitype-pixel/regular)
+
+
 ## Demo
 
 [▶ Live Demo](https://dawnofsouls.github.io/Editxels/)
@@ -53,3 +62,4 @@ https://user-images.githubusercontent.com/28073955/229327536-6e5580c5-fb63-4840-
 Standard color picker tool to call back the color you already used on your canvas
 #### 2: Easy change background color
 Pretty self explanatory. If your canvas is pretty big, it takes a while to fill the entire background with color of your choice by painting manually
+
