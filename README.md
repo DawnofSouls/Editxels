@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/28073955/229328166-712d7be1-4d30-45fa-a932-5374800a1b6d.png" width="500">
+    <img src="https://user-images.githubusercontent.com/28073955/229328166-712d7be1-4d30-45fa-a932-5374800a1b6d.png" width="800">
 </p>
 
 # Editxels
