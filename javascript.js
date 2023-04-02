@@ -320,7 +320,7 @@ SaveImageClick.onclick = function () {
   
   html2canvas(screenshotTarget).then((canvas) => {
     const base64image = canvas.toDataURL("image/png");
-    var anchor = document.createElement("a");
+    let anchor = document.createElement("a");
     anchor.setAttribute("href", base64image);
     anchor.setAttribute("download", "my-image.png");
     anchor.click();
