@@ -33,6 +33,9 @@ A project based on Etch a Sketch project from The Odin Project.
 ![Imgur](https://imgur.com/xkP6nEP.png)
 
 ## Gif Preview
+
+https://user-images.githubusercontent.com/28073955/229327536-6e5580c5-fb63-4840-9587-6f333a9f31aa.mp4
+
 ## Tech Stack
 
 **Language:** HTML, CSS, Javascript
